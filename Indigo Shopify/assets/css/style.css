@@ -1,0 +1,270 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* ============ Navbar ============ */
+nav{
+    background: linear-gradient( to right, #F47321, #F47321, #F47321,  #702B88,  #702B88);
+    border-radius: 0px 0px 120px 120px !important;
+    /* padding: 0 5rem!important; */
+}
+
+.logo{
+    width: 11.37rem;
+    height: 4rem;
+}
+
+.transparent-orange{
+    color: #F47321;
+    background: transparent;
+    font-weight: 400;
+    border: 1px solid #F47321;
+    border-radius: 14px;
+    width: 6.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.transparent-orange:hover{
+    background: #F47321;
+    color: white;
+    transition: .2s;
+}
+
+.search-bar{
+    width: 9.06rem!important;
+    height: 2.6rem!important;
+}
+
+.search-button{
+    width: 2.06rem!important;
+    height: 2.6rem!important;
+    background-color: #F47321;
+    border-radius: 0 10px 10px 0px;
+    color: #fff;
+    border: none;
+    margin-left: -3px;
+    z-index: 9999999999;
+}
+
+.urdu{
+    width: 2.5rem;
+    height: 2rem;
+    background: #D9D9D9;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.orange-side{
+    width: 1.2rem!important;
+    height: 2rem!important;
+    background-color: #F47321;
+    border-radius: 0 5px 5px 0px;
+    color: #fff;
+    border: none;
+    margin-left: -3px;
+    z-index: 9999999999;
+}
+
+
+
+/* ======= Mini Nav =======  */
+.other-links{
+    position: relative;
+    top: 4rem;
+    width: 628px;
+}
+
+
+/* .carousel img{
+    width: 100%;
+    height: 57rem;
+} */
+
+
+
+/* <!-- =========== Carousel / Hero section =========== --> */
+.hero{
+    width: 100%;
+    height: 57rem;
+    background: url(../img/hero.png);
+    background-size:  cover;
+    /* overflow-y: hidden; */
+    background-position: center;
+    /* overflow: hidden; */
+}
+
+.big-heading{
+    color: #702B88;
+    font-weight: 900;
+    font-size: 5.5rem;
+    line-height:4.5rem;
+    text-transform: uppercase;
+}
+
+.slider-text button{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: .3rem;
+    font-size: 1rem;
+}
+
+.one,.two,.three{
+    line-height: 1rem;
+    margin: 2rem 0;
+}
+
+.one h3,.two h3,.three h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.one{
+    color: #702B88;
+}
+
+.two{
+    color: #fff;
+    background: linear-gradient( to right, #702B88 , #F47321);
+    padding: 1rem;
+    /* width: 15rem; */
+    /* padding-right: 2rem; */
+    border-radius: 3rem 0 0 3rem;
+}
+
+.three{
+    color: #F37321;
+}
+
+
+.card{
+    width: 24.5rem;
+    height: 40rem;
+    background: #D9D9D9;
+    margin-top: .5rem;
+    border: 3px solid;
+    border-color: linear-gradient(to top,#F37321, #702B88);
+    border-radius: 5.6rem; 
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.card:hover{
+    background: #aaa;
+    transition: .5s;
+}
+
+.orange-button{
+    background: #F37321;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+    border: none;
+    padding: .5rem 1rem;
+}
+
+.orange-button:hover{
+    background: transparent;
+    color: #F37321;
+    border: 1px solid #F37321;
+    transition: .2s;
+}
+
+.flash-sales .big-heading{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.flash-sales{
+    background:#F37321;
+    border-radius: 6rem;
+    /* height: 35rem; */
+    width: 100%;
+}
+
+.flash-sales .text{
+    margin-top: 8rem;
+}
+
+.flash-sales img{
+    margin: -10rem 0 0 -5rem;
+    /* width: 100%; */
+}
+
+.flash-sales .transparent-orange{
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 5px 10px;
+}
+
+.flash-sales .transparent-orange:hover{
+    background: #fff;
+    color: #F37321;
+    transition: .2s;
+}
+
+/* ========== Mobile ========== */
+@media screen and (max-width: 1090px) 
+{
+    nav{
+        background: linear-gradient( to top, #702B88 , #F47321);
+        text-align: center;
+    }
+
+    nav ul li{
+        padding-top: 2rem;
+    }
+    
+    .transparent-orange{
+        margin: auto;
+    }
+
+    .hero .row{
+        display: none;
+        visibility: hidden;
+    }
+
+    .card{
+        width: 20rem;
+        height: 35rem;
+        padding: 5 0rem;
+        margin: auto;
+    }
+    
+    .flash-sales{
+        padding: 1rem;
+    }
+
+    .flash-sales img{
+        margin: -10rem auto;
+        width: 800px;
+        /* margin: auto; */
+    }
+
+    .flash-sales .text{
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+    .text p{
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+    .flash-sales img{
+        margin: -10rem auto;
+        width: 600px;
+    }
+}
